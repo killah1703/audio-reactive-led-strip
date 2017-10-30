@@ -41,7 +41,7 @@ if DEVICE == 'pi':
 
     LED_FREQ_HZ = 800000
     """LED signal frequency in Hz (usually 800kHz)"""
-    LED_DMA = 5
+    LED_DMA = 10   # Do NOT use DMA5 on RPi3 !!! --> https://github.com/jgarff/rpi_ws281x/issues/176
     """DMA channel used for generating PWM signal (try 5)"""
     BRIGHTNESS = 255
     """Brightness of LED strip between 0 and 255"""
